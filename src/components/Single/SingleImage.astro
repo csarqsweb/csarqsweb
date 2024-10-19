@@ -15,6 +15,7 @@ const { image , title ,subtitle, lazyload } = Astro.props
         width={image.width}
         densities={[1.5, 2]}
         alt=`${title || ''} ${subtitle || ''}`
+        title=`${title || ''} ${subtitle || ''}`
       />
     </figure>
   </div>

@@ -16,12 +16,12 @@ const currentPath = Astro.url.pathname;
                   (currentPath === href || (href === '/proyectos/' && currentPath.startsWith('/proyectos/'))) ? (
 
 
-                  <a href={href} class="footer_nav_a active">
+                  <a href={href} class="footer_nav_a active" title={text}>
                     <span class="link">{text}</span>
                   </a>
 
                 ) : (
-                 <a href={href} class="footer_nav_a">
+                 <a href={href} class="footer_nav_a" title={text}>
                     <span class="link">{text}</span>
                   </a>
 

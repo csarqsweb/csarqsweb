@@ -21,6 +21,7 @@ const isHome = Astro.url.pathname === '/';
             width={Image1.width / 2}
             densities={[1.5, 2]}
             alt="Casa Acanforest"
+            title="Proyecto Casa Acanforest | Obra Nueva"
           />
 
           <span class="caption">Casa Acanforest  <span class="label">OBRA NUEVA</span></span>
@@ -32,7 +33,8 @@ const isHome = Astro.url.pathname === '/';
         <figure class="figure">
           <Image
           loading="lazy" class="img" src={Image2} alt="Casa Chacras" width={Image2.width / 2}
-          densities={[1.5, 2]}/>
+          densities={[1.5, 2]}
+          title="Proyecto Casa Chacras | Proyecto"/>
           <span class="caption">Casa Chacras  <span class="label">PROYECTO</span></span>
         </figure>
       </a>
@@ -44,7 +46,7 @@ const isHome = Astro.url.pathname === '/';
         <figure class="figure">
           <Image
           loading={isHome ? 'lazy': "eager"} class="img" src={Image2} alt="Casa La Cuesta" width={Image2.width / 2}
-          densities={[1.5, 2]}/>
+          densities={[1.5, 2]} title="Proyecto Casa La Cuesta | Interiorismo"/>
           <span class="caption">Casa La Cuesta  <span class="label">INTERIORISMO</span></span>
         </figure>
       </a>
@@ -56,7 +58,8 @@ const isHome = Astro.url.pathname === '/';
           loading="lazy" class="img" src={Image1}
           width={Image1.width / 2}
           densities={[1.5, 2]}
-          alt="Casa San Francisco"/>
+          alt="Casa San Francisco"
+          title="Proyecto Casa San Francisco | Reforma"/>
           <span class="caption">Casa San Francisco  <span class="label">REFORMA</span></span>
         </figure>
       </a>

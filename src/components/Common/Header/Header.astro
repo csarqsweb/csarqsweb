@@ -34,7 +34,7 @@ const { class: className } = Astro.props;
                   (currentPath === href || (href === '/proyectos/' && currentPath.startsWith('/proyectos/'))) ? (
 
 
-                  <a href={href} class="nav-a active">
+                  <a href={href} class="nav-a active" title={text}>
                     {text}
                   </a>
                   <div
@@ -42,7 +42,7 @@ const { class: className } = Astro.props;
                     class="navline active"
                   />
                 ) : (
-                 <a href={href} class="nav-a">
+                 <a href={href} class="nav-a" title={text}>
                     {text}
                   </a>
                   <div class="navline" />
