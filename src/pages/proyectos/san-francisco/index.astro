@@ -10,8 +10,22 @@ import SingleInfo from '@/components/Single/SingleInfo';
 
 import Layout from '@/layouts/Layout';
 
-import OgImg from '../../../assets/images/clientes/og-img.jpg'
-import imageHero from '../../../assets/images/clientes/sample1.jpg'
+import OgImg from '../../../assets/images/clientes/sanfrancisco/og-sanfrancisco.webp'
+import imageHero from '../../../assets/images/clientes/sanfrancisco/feature-sanfrancisco.webp'
+
+
+import imageGaleria from '../../../assets/images/clientes/sanfrancisco/galeria-sanfrancisco.webp'
+import imageHallEntrada from '../../../assets/images/clientes/sanfrancisco/hallentrada-sanfrancisco.webp'
+
+import imagenEspacio1 from '../../../assets/images/clientes/sanfrancisco/espacio-verde-sanfrancisco-1.webp'
+import imagenEspacio2 from '../../../assets/images/clientes/sanfrancisco/espacio-verde-sanfrancisco-2.webp'
+
+import imagenComedor from '../../../assets/images/clientes/sanfrancisco/living-sanfrancisco.webp'
+
+
+import imagenEspacios1 from '../../../assets/images/clientes/sanfrancisco/pasillo-sanfrancisco.webp'
+import imagenEspacios2 from '../../../assets/images/clientes/sanfrancisco/bano-sanfrancisco.webp'
+
 import imageHero2 from '../../../assets/images/clientes/sample3.jpg'
 
 import singleImage from '../../../assets/images/clientes/sample4.jpg'
@@ -28,7 +42,7 @@ import comedor2 from '../../../assets/images/clientes/sample_v2.jpg'
 ---
 
 
-<Layout title="— Casa San Francisco" ogImage={OgImg.src} >
+<Layout title="— Casa San Francisco" ogImage={OgImg.src} description="Descubre un diseño elegante y funcional con espacios optimizados, combinando materiales de calidad y detalles sofisticados para un hogar moderno y acogedor." >
 	<main>
 		<Header class={'header'} />
 		<div style={{height:'100px'}}></div>
@@ -37,31 +51,103 @@ import comedor2 from '../../../assets/images/clientes/sample_v2.jpg'
 			<header>
 				<div class="row">
 
-					<h1>— Casa Acanforest</h1>
+					<h1>— Casa San Francisco</h1>
 
 					<SingleHero
 					items={[
-						{ title: "Cliente", text: "Lorem impsim " },
-						{ title: "Location", text: "Acanforest, Buenos Aires" },
-						{ title: "Size", text: "200m2" },
+						// { title: "Cliente", text: "Lorem impsim " },
+						{ title: "Location", text: "San Francisco, Manzanares" },
+						{ title: "Size", text: "367m2" },
+						{ title: "Terreno", text: "914m2" },
 						{ title: "Type", text: "Vivienda" },
 					]}
+					
+					
 					description={[
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate justo vel risus imperdiet luctus vel at dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit vulputate justo vel risus imperdiet luctus vel at dolor. vulputate justo vel risus imperdiet luctus vel at dolor. imperdiet luctus vel at dolor. vulputate justo vel risus imperdiet luctus vel at dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulput.",
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate justo vel risus imperdiet luctus vel at dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit vulputate justo vel risus imperdiet luctus vel at dolor. vulputate justo vel risus imperdiet luctus vel at dolor. imperdiet luctus vel at dolor."
+						"Esta moderna y luminosa vivienda ubicada en el corazón de San Francisco destaca por su diseño funcional y elegante. Al ingresar, el hall de entrada da la bienvenida con una cálida iluminación natural, mientras que el amplio living invita a disfrutar de momentos de relajación y convivencia en un espacio cómodo y sofisticado.",
+						"La casa cuenta con una galería que conecta armoniosamente con el patio, ideal para reuniones al aire libre o simplemente disfrutar del entorno. Además, dispone de un práctico estacionamiento para auto, ofreciendo comodidad y seguridad en el día a día."
 					]} />
 
 				</div>
 			</header>
 
-			<SingleImageHero image={imageHero} title="Hall de Entrada" subtitle="Acanforest" />
+			<SingleImageHero image={imageHero} title="Hall de Entrada" subtitle="San Francisco" />
 
 			<SingleInfo
 			title="La galeria"
 			text={[
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, turpis pretium varius suscipit, lectus est interdum turpis, a ullamcorper felis ipsum eu neque. Fusce vitae sapien sed dolor tempor convallis. Nulla id velit nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum dapibus aliquam dapibus. Pellentesque at consectetur nibh, scelerisque iaculis massa. Vestibulum elit dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+				"La galería de esta vivienda es un espacio moderno, luminoso y amplio, diseñado para conectar el interior con el exterior de manera armónica. Sus grandes aberturas permiten el ingreso de luz natural durante todo el día, creando un ambiente cálido y acogedor.",
+				"Perfecta para disfrutar de momentos al aire libre, esta galería se adapta tanto a reuniones sociales como a instantes de relax en un entorno elegante y funcional.",
 			]} />
 
+
+			<SingleImage image={imageGaleria}  title="La Galeria" subtitle="San Francisco" />
+
+			<SingleInfo
+			title="Entrada y Espacios"
+			text={[
+				"El hall de entrada, de estilo moderno y elegante, marca el carácter contemporáneo de la vivienda desde el primer momento. A su lado, dos cocheras amplias brindan comodidad y funcionalidad para el estacionamiento.",
+				"Los espacios verdes están cuidadosamente distribuidos alrededor de la casa, integrándose de manera armoniosa con el diseño y aportando un toque de frescura y naturalidad a cada rincón.",
+			]} />
+
+			<SingleImage image={imageHallEntrada}  title="El Hall de entrada" subtitle="San Francisco" />
+
+			<SingleInfo
+			text={[
+				"Los espacios verdes, integrados de manera sutil, enmarcan el recorrido con plantas cuidadosamente seleccionadas, brindando frescura y una conexión armónica con el entorno natural. La luz natural que atraviesa las aberturas superiores y los ventanales verticales acentúa la atmósfera acogedora del espacio, destacando por su elegancia y funcionalidad.",
+				"El contraste entre el vidrio de los ventanales y las paredes blancas refuerza la estética contemporánea de la vivienda. Al pie de estas ventanas, las plantas tropicales y el paisajismo cuidadosamente diseñado añaden un toque de vida, logrando un equilibrio perfecto entre lo natural y lo construido."
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: imagenEspacio1,
+					title: "Espacios Verdes",
+					subtitle: "San Francisco"
+				},
+				{
+					image: imagenEspacio2,
+					title: "Ventanales",
+					subtitle: "San Francisco",
+					parallax: '0.07'
+				}
+			]}/>
+
+			<SingleInfo
+			title="El Comedor"
+			text={[
+				"Este espacio combina diseño moderno y funcionalidad, destacándose por una conexión fluida entre el interior y el exterior. La sala de estar, de estilo minimalista, presenta sofás blancos que aportan luminosidad, mientras que el techo de concreto y las luminarias negras brindan un contraste contemporáneo. Grandes ventanales de vidrio corredizo enmarcan una vista hacia una terraza cubierta con pérgola de madera, ofreciendo una transición perfecta hacia el jardín. Cada detalle, desde los muebles hasta la decoración, está pensado para crear un ambiente acogedor y elegante.",
+			]} />
+
+			<SingleImage image={imagenComedor}  title="El Comedor" subtitle="San Francisco" />
+
+
+			<SingleInfo
+			text={[
+				"Este espacio combina diseño moderno y funcionalidad, destacándose por una conexión fluida entre el interior y el exterior. La sala de estar, de estilo minimalista, presenta sofás blancos que aportan luminosidad, mientras que el techo de concreto y las luminarias negras brindan un contraste contemporáneo.",
+				"Grandes ventanales de vidrio corredizo enmarcan una vista hacia una terraza cubierta con pérgola de madera, ofreciendo una transición perfecta hacia el jardín. Cada detalle, desde los muebles hasta la decoración, está pensado para crear un ambiente acogedor y elegante."
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: imagenEspacios1,
+					title: "Pasillo a Medida",
+					subtitle: "San Francisco"
+				},
+				{
+					image: imagenEspacios2,
+					title: "Baño moderno y funcional",
+					subtitle: "San Francisco",
+					parallax: '0.07'
+				}
+			]}/>
+
+			<SingleInfo
+			text={[
+				"Estos espacios combinan elegancia y funcionalidad, fusionando detalles modernos con toques cálidos. El baño destaca por los azulejos en tonos verdes que aportan frescura y modernidad, complementados por un lavabo de piedra y grifería minimalista, creando un ambiente sofisticado. En el pasillo, la carpintería en madera natural añade calidez, con armarios y estanterías integradas que optimizan el almacenamiento. Los acabados impecables y la iluminación estratégica unen estilo y practicidad, ofreciendo un recorrido armonioso que refleja confort y diseño.",
+				
+			]} />
+
+			<!-- 
 			<SingleImagePair images={[
 				{
 					image: galeria1,
@@ -75,13 +161,16 @@ import comedor2 from '../../../assets/images/clientes/sample_v2.jpg'
 					parallax: '0.07'
 				}
 			]}/>
-
+			 -->
+			
+			 
+			<!-- 			 
 			<SingleInfo
 			text={[
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, turpis pretium varius suscipit, lectus est interdum turpis, a ullamcorper felis ipsum eu neque. Fusce vitae sapien sed dolor tempor convallis. Nulla id velit nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum dapibus aliquam dapibus. Pellentesque at consectetur nibh, scelerisque iaculis massa. Vestibulum elit dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 			]} />
 
-			<SingleImage image={singleImage}  title="La Galeria" subtitle="Acanforest" />
+			<SingleImage image={imageGaleria}  title="La Galeria" subtitle="Acanforest" />
 
 			<SingleInfo
 			title="El Comedor"
@@ -115,7 +204,7 @@ import comedor2 from '../../../assets/images/clientes/sample_v2.jpg'
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, turpis pretium varius suscipit, lectus est interdum turpis, a ullamcorper felis ipsum eu neque. Fusce vitae sapien sed dolor tempor convallis. Nulla id velit nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum dapibus aliquam dapibus. Pellentesque at consectetur nibh, scelerisque iaculis massa. Vestibulum elit dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, turpis pretium varius suscipit, lectus est interdum turpis, a ullamcorper felis ipsum eu neque. Fusce vitae sapien sed dolor tempor convallis. Nulla id velit nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum dapibus aliquam dapibus. Pellentesque at consectetur nibh, scelerisque iaculis massa. Vestibulum elit dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 			]} />
-
+			 -->
 
 
 
