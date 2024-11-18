@@ -1,0 +1,264 @@
+---
+import CallToAction from '@/components/Common/CallToAction/CallToAction';
+import Footer from '@/components/Common/Footer/Footer';
+import Header from '@/components/Common/Header/Header';
+import SingleHero from '@/components/Single/SingleHero';
+import SingleImage from '@/components/Single/SingleImage';
+import SingleImageHero from '@/components/Single/SingleImageHero';
+import SingleImagePair from '@/components/Single/SingleImagePair';
+import SingleInfo from '@/components/Single/SingleInfo';
+
+import Layout from '@/layouts/Layout';
+
+
+import OgImg from '../../../assets/images/clientes/alcanfores/og-alcanfores.webp'
+import imageHero from '../../../assets/images/clientes/alcanfores/feature-alcanfores.webp'
+
+import imageLiving from '../../../assets/images/clientes/alcanfores/comedor-alcanfores-3.webp'
+
+import imagenEspacio1 from '../../../assets/images/clientes/alcanfores/comedor-alcanfores-1.webp'
+import imagenEspacio2 from '../../../assets/images/clientes/alcanfores/comedor-alcanfores-2.webp'
+
+import imagenPatio from '../../../assets/images/clientes/alcanfores/jardin-alcanfores.webp'
+
+
+
+
+import imagenHall1 from '../../../assets/images/clientes/alcanfores/hall-alcanfores-1.webp'
+import imagenHall2 from '../../../assets/images/clientes/alcanfores/hall-alcanfores-2.webp'
+
+---
+
+
+<Layout title="— Casa Alcanfores" ogImage={OgImg.src} description="Vivienda de lujo, diseño minimalista, acabados de alta calidad, espacios amplios, cocina gourmet, terraza exterior. Encuentra tu hogar ideal en Alcanfores" >
+	<main>
+		<Header class={'header'} />
+		<div style={{height:'100px'}}></div>
+
+		<section>
+			<header>
+				<div class="row">
+
+					<h1>— Casa Los Alcanfores</h1>
+
+					<SingleHero
+					items={[
+						// { title: "Cliente", text: "Lorem impsim " },
+						{ title: "Location", text: "Alcanfores, Manzanares" },
+						{ title: "Size", text: "320m2" },
+						{ title: "Terreno", text: "800m2" },
+						{ title: "Type", text: "Vivienda" },
+					]}
+				
+					description={[
+						"Elegancia y minimalismo se fusionan en esta espectacular vivienda. Con un diseño contemporáneo y acabados de alta calidad, cada rincón de esta casa ha sido cuidadosamente pensado para ofrecer el máximo confort y estilo. La paleta de colores neutros y los materiales naturales crean un ambiente sereno y sofisticado, ideal para aquellos que buscan un hogar moderno y atemporal.",
+						"La casa cuenta con espacios amplios y luminosos, que se integran perfectamente con el entorno natural gracias a sus grandes ventanales. La cocina, equipada con electrodomésticos de última generación, es el corazón de la casa y el lugar perfecto para compartir momentos especiales. Además, la terraza exterior es ideal para disfrutar de reuniones al aire libre."
+					]} />
+
+				</div>
+			</header>
+
+			<SingleImageHero image={imageHero} title="Entrada principal" subtitle="Alcanfores" />
+
+			<SingleInfo
+			title="El comedor"
+			text={[
+				"Este espacio de concepto abierto combina comedor y cocina en un diseño moderno y minimalista que destaca por su elegancia y funcionalidad. La paleta de colores claros y neutros, junto con materiales naturales como la madera, crea una atmósfera luminosa y acogedora. La gran mesa de madera, acompañada de sillas tapizadas en tonos beige con detalles capitoné, se encuentra estratégicamente ubicada frente a una amplia ventana que inunda el área de luz natural, complementada por cortinas blancas que añaden suavidad y privacidad."			
+			]} />
+
+			<SingleImage image={imageLiving} title="El comedor" subtitle="Alcanfores" />
+
+			<SingleInfo
+			
+			text={[
+				"El comedor y la cocina se encuentran integrados en un espacio abierto y funcional, creando un ambiente perfecto para compartir momentos especiales con familiares y amigos. La isla central, con su elegante diseño y superficie de mármol blanco, sirve como punto focal del espacio, separando visualmente las dos áreas sin aislarlas por completo."				
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: imagenEspacio1,
+					title: "Isla Cocina",
+					subtitle: "Alcanfores"
+				},
+				{
+					image: imagenEspacio2,
+					title: "Comedor integrado",
+					subtitle: "Alcanfores",
+					parallax: '0.07'
+				}
+			]}/>
+			
+			<SingleInfo
+			
+			text={[
+				"La integración del comedor y la cocina crea un flujo continuo entre las dos áreas, permitiendo que los anfitriones se muevan con facilidad entre la preparación de los alimentos y la interacción con los invitados. Este diseño abierto y funcional es ideal para aquellos que disfrutan de la compañía y la conversación mientras cocinan y comparten comidas."				
+			]} />
+
+			<SingleInfo
+			title="El Patio"
+			text={[
+				"Esta casa moderna de una sola planta, ubicada en un entorno residencial, combina diseño minimalista con una fuerte conexión con la naturaleza. Sus líneas limpias y paredes de tono ocre claro contrastan elegantemente con los marcos negros de ventanas y puertas, mientras que los amplios ventanales permiten la entrada de luz natural y ofrecen vistas al cuidado jardín trasero. ",
+			]} />
+
+			<SingleImageHero image={imagenPatio} title="El Patio" subtitle="Alcanfores" />
+			
+			<SingleInfo
+			text={[
+				"El espacio exterior incluye una amplia terraza cubierta y un acogedor fogón al aire libre rodeado de bancos de madera rústica, perfecto para reuniones y momentos de relajación. El jardín, con césped verde y una zona de grava blanca, complementa la estética moderna con un toque de frescura y tranquilidad. Este diseño armonioso logra un equilibrio ideal entre confort, sofisticación y disfrute al aire libre.",
+			]} />
+
+			<SingleInfo
+			title="La entrada principal"
+			text={[
+				"La entrada principal de esta vivienda moderna combina elegancia y minimalismo, destacándose por su diseño sofisticado y una acertada mezcla de materiales. Una puerta de vidrio con marcos negros permite la entrada de abundante luz natural, mientras contrasta con las paredes exteriores blancas y una pared de piedra natural que aporta textura y calidez al conjunto. Los escalones revestidos con baldosas cerámicas de diseño geométrico conducen a la entrada, añadiendo un toque de originalidad.",
+			]} />
+			
+
+			<SingleImagePair images={[
+				{
+					image: imagenHall1,
+					title: "La entrada principal",
+					subtitle: "Alcanfores"
+				},
+				{
+					image: imagenHall2,
+					title: "Hall de entrada",
+					subtitle: "Alcanfores",
+					parallax: '0.07'
+				}
+			]}/>
+			
+			<SingleInfo
+			text={[
+				"Flanqueando la escalera, pequeños jardines con plantas ornamentales y grava decorativa aportan color y vitalidad al espacio, realzando la atmósfera moderna e industrial. La armonía entre los materiales de alta calidad, las líneas rectas y la iluminación natural crea una entrada acogedora, que refleja la estética cuidada del interior de la vivienda.",
+			]} />
+			
+
+
+			
+
+
+
+<!-- 
+			<SingleImageHero image={imageLiving} title="Living" subtitle="Alcanfores" />
+
+			<SingleInfo
+			text={[
+
+				"Esta casa moderna de una sola planta cuenta con una fachada blanca limpia y elegante, acentuada por una pared de piedra natural que rodea la puerta de entrada de madera. La casa está rodeada por un césped verde bien cuidado y árboles altos que proporcionan sombra y privacidad. El diseño general de la casa es moderno y minimalista, con líneas limpias y formas geométricas. ",
+				
+			]} />
+
+			<SingleImage image={imagenPatio}  title="El patio trasero" subtitle="Alcanfores" />
+
+
+			<SingleInfo
+			text={[
+
+				"El patio trasero está diseñado para ofrecer el máximo confort y estilo de vida al aire libre. El césped verde y bien cuidado se extiende hasta la piscina, creando un espacio amplio y versátil. La piscina cuenta con un diseño moderno y está rodeada por un solárium con tumbonas para tomar el sol. Una pérgola con cubierta de madera proporciona sombra y un espacio de comedor al aire libre. Los muros de piedra natural añaden un toque rústico y elegante al diseño, mientras que la vegetación exuberante crea un ambiente privado y acogedor. ",
+				
+			]} />
+
+			<SingleInfo
+			title="El baño"
+			text={[
+				"El baño está diseñado con una combinación de materiales que crean un ambiente sereno y sofisticado. Las paredes están revestidas con azulejos rectangulares blancos de cerámica, que proporcionan una superficie fácil de limpiar y un aspecto moderno. El mueble bajo el lavabo está fabricado en madera natural, aportando calidez y textura al espacio. La bañera ovalada, de líneas suaves y diseño contemporáneo, es el centro de atención del baño. El suelo, de un tono similar al de las paredes, crea una sensación de continuidad visual. "
+				
+				
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: imagenBano1,
+					title: "Baño ",
+					subtitle: "Alcanfores"
+				},
+				{
+					image: imagenBano2,
+					title: "El baño",
+					subtitle: "Alcanfores",
+					parallax: '0.07'
+				}
+			]}/>
+
+			<SingleInfo
+			
+			text={[
+				"El baño presenta un estilo contemporáneo y minimalista, caracterizado por la sencillez de las formas, la elección de materiales de alta calidad y la combinación de colores neutros con toques de color en los detalles. "
+				
+			]} /> -->
+
+
+		</section>
+
+		<CallToAction />
+		<Footer />
+
+	</main>
+</Layout>
+
+<style>
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+header{
+	margin-bottom: 10px;
+}
+
+h1{
+	font-weight: 400;
+	font-size: 28px;
+	margin: 2px 0 20px;
+}
+h2{
+	font-weight: 300;
+	font-size: 18px;
+	margin: 3px 0 25px;
+	b{
+		font-weight: 400;
+	}
+
+}
+p{
+	font-size: 16px;
+	line-height: 1.6;
+	color: #565656;
+}
+section{
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+	section {
+		gap: 80px;
+	}
+	header{
+		padding: 40px 0 0;
+	}
+	h1{
+		font-weight: 300;
+		font-size: 66px;
+		margin: 2px 0 50px;
+	}
+	h2{
+		font-weight: 200;
+		font-size: 62px;
+	}
+	p{
+		color: #444;
+		font-size: 22px;
+		line-height: 1.5;
+		font-weight: 300;
+		margin: 40px 0 0 120px;
+	}
+}
+
+</style>
+
+
+
+
