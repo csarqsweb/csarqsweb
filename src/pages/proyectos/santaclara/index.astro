@@ -1,0 +1,314 @@
+---
+import CallToAction from '@/components/Common/CallToAction/CallToAction';
+import Footer from '@/components/Common/Footer/Footer';
+import Header from '@/components/Common/Header/Header';
+import SingleHero from '@/components/Single/SingleHero';
+import SingleImage from '@/components/Single/SingleImage';
+import SingleImageHero from '@/components/Single/SingleImageHero';
+import SingleImagePair from '@/components/Single/SingleImagePair';
+import SingleInfo from '@/components/Single/SingleInfo';
+
+import Layout from '@/layouts/Layout';
+
+
+import OgImg from '../../../assets/images/clientes/santaclara/og-santaclara.webp'
+import imageHero from '../../../assets/images/clientes/santaclara/feature-santaclara.webp'
+
+import imagenEspacio2 from '../../../assets/images/clientes/santaclara/cocina-santaclara-1.webp'
+import imagenEspacio1 from '../../../assets/images/clientes/santaclara/cocina-santaclara-2.webp'
+
+
+import imageGaleria from '../../../assets/images/clientes/santaclara/cocina-santaclara.webp'
+import imagePateo from '../../../assets/images/clientes/santaclara/patio-santaclara.webp'
+
+
+
+import imagenBano1 from '../../../assets/images/clientes/santaclara/bano-santaclara-1.webp'
+import imagenBano2 from '../../../assets/images/clientes/santaclara/bano-santaclara-2.webp'
+
+---
+
+
+<Layout title="— Casa Santa Clara" ogImage={OgImg.src} description="Descubre un diseño elegante y funcional con espacios optimizados, combinando materiales de calidad y detalles sofisticados para un hogar moderno y acogedor." >
+	<main>
+		<Header class={'header'} />
+		<div style={{height:'100px'}}></div>
+
+		<section>
+			<header>
+				<div class="row">
+
+					<h1>— Casa Santa Clara</h1>
+
+					<SingleHero
+					items={[
+						// { title: "Cliente", text: "Lorem impsim " },
+						{ title: "Location", text: "Santa Clara, Manzanares" },
+						{ title: "Size", text: "367m2" },
+						{ title: "Terreno", text: "914m2" },
+						{ title: "Type", text: "Vivienda" },
+					]}
+					
+					
+					description={[
+						"El proyecto Santa Clara se enfoca en la creación de espacios que combinan funcionalidad, modernidad y elegancia, adaptándose a las necesidades contemporáneas de sus usuarios. Este proyecto destaca por el uso de materiales de alta calidad, una paleta de colores neutros y detalles cuidadosamente seleccionados para lograr un equilibrio perfecto entre estilo y practicidad.",
+						
+					]} />
+
+				</div>
+			</header>
+
+			<SingleImageHero image={imageHero} title="Hall de Entrada" subtitle="Santa Clara" />
+
+			<SingleInfo
+			title="La Cocina"
+			text={[
+				"La cocina del proyecto Santa Clara es un ejemplo de diseño contemporáneo, pensado para maximizar la funcionalidad sin sacrificar la estética. La encimera lisa y los electrodomésticos de acero inoxidable se combinan con un backsplash de azulejos blancos tipo ',metro', proporcionando un entorno luminoso y fácil de mantener. El diseño incluye detalles cálidos y prácticos que hacen de este espacio el corazón del hogar.",
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: imagenEspacio1,
+					title: "La cocina",
+					subtitle: "Santa Clara"
+				},
+				{
+					image: imagenEspacio2,
+					title: "La mesada",
+					subtitle: "Santa Clara",
+					parallax: '0.07'
+				}
+			]}/>
+
+
+			<SingleImage image={imageGaleria}  title="La cocina" subtitle="Santa Clara" />
+
+			<SingleInfo
+			title="La cocina"
+			text={[
+				"La cocina es un espacio moderno y elegante, diseñado para combinar funcionalidad y estilo. Los azulejos blancos en las paredes aportan un toque limpio y luminoso, reflejando la luz natural y ampliando visualmente el ambiente. En el centro, una isla multifuncional se erige como el corazón de la cocina, perfecta para preparar alimentos, compartir comidas rápidas o incluso socializar mientras se cocina. ",
+				
+			]} />
+			
+			<SingleImagePair images={[
+				{
+					image: imagenEspacio1,
+					title: "Cocina con isla",
+					subtitle: "Santa Clara"
+				},
+				{
+					image: imagenEspacio2,
+					title: "Mesada",
+					subtitle: "Santa Clara",
+					parallax: '0.07'
+				}
+			]}/>
+			<SingleInfo
+			
+			text={[	
+				"La mesada de mármol claro, con su textura suave y vetas sutiles, añade un aire de sofisticación, brindando además una superficie duradera y fácil de mantener. Los detalles minimalistas y los materiales de alta calidad crean un espacio acogedor y moderno, ideal para disfrutar del arte culinario.",
+				"El patio del proyecto Santa Clara es un área diseñada para disfrutar del aire libre con estilo y funcionalidad. Cuenta con una galería acogedora que ofrece sombra y comodidad, perfecta para reuniones y comidas al aire libre. La parrilla integrada se convierte en el centro de encuentros sociales, uniendo practicidad y diseño en un espacio pensado para el disfrute.",
+				
+			]} />
+
+			<SingleImage image={imagePateo}  title="El Patio" subtitle="Santa Clara" />
+			
+			<SingleInfo
+			
+			text={[
+				"La pileta, con su diseño moderno y elegante, aporta un toque de frescura y relajación, convirtiéndose en el complemento ideal para el entorno. Este patio combina elementos funcionales y estéticos, creando un lugar versátil que invita a compartir momentos inolvidables en un ambiente cómodo y sofisticado.",
+				"Baños modernos con azulejos blancos y diseño minimalista evoca una sensación de pureza y amplitud. Las paredes revestidas con azulejos blancos, de acabado brillante o mate, reflejan la luz y crean un ambiente luminoso y acogedor. Las líneas limpias y el mobiliario sencillo se combinan con detalles funcionales, como un lavabo suspendido o encastrado en tonos neutros, grifería cromada de diseño elegante y un espejo amplio sin marco. El espacio se complementa con toques de madera clara o negro mate en los accesorios, enfatizando la estética minimalista y sofisticada.",
+				
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: imagenBano1,
+					title: "Toilette ",
+					subtitle: "Santa Clara"
+				},
+				{
+					image: imagenBano2,
+					title: "Baño moderno",
+					subtitle: "Santa Clara",
+					parallax: '0.07'
+				}
+			]}/>
+
+			<!-- <SingleInfo
+			text={[
+				"El diseño del baño integra elementos modernos y atemporales. La encimera de mármol con lavabo de cerámica aporta un aire de lujo, mientras que los azulejos blancos tipo 'metro' reflejan un enfoque clásico y funcional. Los detalles en negro, como el marco del espejo, añaden profundidad y carácter, creando un espacio armonioso y refinado.",
+				"La cocina del proyecto Santa Clara es un ejemplo de diseño contemporáneo, pensado para maximizar la funcionalidad sin sacrificar la estética. La encimera lisa y los electrodomésticos de acero inoxidable se combinan con un backsplash de azulejos blancos tipo ',metro', proporcionando un entorno luminoso y fácil de mantener. El diseño incluye detalles cálidos y prácticos que hacen de este espacio el corazón del hogar."
+			]} />
+
+			
+
+			<SingleInfo
+			title="El Comedor"
+			text={[
+				"Este espacio combina diseño moderno y funcionalidad, destacándose por una conexión fluida entre el interior y el exterior. La sala de estar, de estilo minimalista, presenta sofás blancos que aportan luminosidad, mientras que el techo de concreto y las luminarias negras brindan un contraste contemporáneo. Grandes ventanales de vidrio corredizo enmarcan una vista hacia una terraza cubierta con pérgola de madera, ofreciendo una transición perfecta hacia el jardín. Cada detalle, desde los muebles hasta la decoración, está pensado para crear un ambiente acogedor y elegante.",
+			]} />
+
+			<SingleImage image={imagenComedor}  title="El Comedor" subtitle="Santa Clara" />
+
+
+			<SingleInfo
+			text={[
+				"Este espacio combina diseño moderno y funcionalidad, destacándose por una conexión fluida entre el interior y el exterior. La sala de estar, de estilo minimalista, presenta sofás blancos que aportan luminosidad, mientras que el techo de concreto y las luminarias negras brindan un contraste contemporáneo.",
+				"Grandes ventanales de vidrio corredizo enmarcan una vista hacia una terraza cubierta con pérgola de madera, ofreciendo una transición perfecta hacia el jardín. Cada detalle, desde los muebles hasta la decoración, está pensado para crear un ambiente acogedor y elegante."
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: imagenEspacios1,
+					title: "Pasillo a Medida",
+					subtitle: "Santa Clara"
+				},
+				{
+					image: imagenEspacios2,
+					title: "Baño moderno y funcional",
+					subtitle: "Santa Clara",
+					parallax: '0.07'
+				}
+			]}/>
+
+			<SingleInfo
+			text={[
+				"Estos espacios combinan elegancia y funcionalidad, fusionando detalles modernos con toques cálidos. El baño destaca por los azulejos en tonos verdes que aportan frescura y modernidad, complementados por un lavabo de piedra y grifería minimalista, creando un ambiente sofisticado. En el pasillo, la carpintería en madera natural añade calidez, con armarios y estanterías integradas que optimizan el almacenamiento. Los acabados impecables y la iluminación estratégica unen estilo y practicidad, ofreciendo un recorrido armonioso que refleja confort y diseño.",
+				
+			]} /> -->
+
+			<!-- 
+			<SingleImagePair images={[
+				{
+					image: galeria1,
+					title: "La Galeria",
+					subtitle: "Acanforest"
+				},
+				{
+					image: galeria2,
+					title: "La Galeria",
+					subtitle: "Acanforest",
+					parallax: '0.07'
+				}
+			]}/>
+			 -->
+			
+			 
+			<!-- 			 
+			<SingleInfo
+			text={[
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, turpis pretium varius suscipit, lectus est interdum turpis, a ullamcorper felis ipsum eu neque. Fusce vitae sapien sed dolor tempor convallis. Nulla id velit nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum dapibus aliquam dapibus. Pellentesque at consectetur nibh, scelerisque iaculis massa. Vestibulum elit dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			]} />
+
+			<SingleImage image={imageGaleria}  title="La Galeria" subtitle="Acanforest" />
+
+			<SingleInfo
+			title="El Comedor"
+			text={[
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, turpis pretium varius suscipit, lectus est interdum turpis, a ullamcorper felis ipsum eu neque. Fusce vitae sapien sed dolor tempor convallis. Nulla id velit nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum dapibus aliquam dapibus. Pellentesque at consectetur nibh, scelerisque iaculis massa. Vestibulum elit dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: comedor1,
+					title: "El Comedor",
+					subtitle: "Acanforest"
+				},
+				{
+					image: comedor2,
+					title: "El Comedor",
+					subtitle: "Acanforest",
+					parallax: '0.07'
+				}
+			]}/>
+
+			<SingleInfo
+			text={[
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, turpis pretium varius suscipit, lectus est interdum turpis, a ullamcorper felis ipsum eu neque. Fusce vitae sapien sed dolor tempor convallis. Nulla id velit nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum dapibus aliquam dapibus. Pellentesque at consectetur nibh, scelerisque iaculis massa. Vestibulum elit dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			]} />
+
+			<SingleImageHero image={imageHero2} title="La Galeria" subtitle="Acanforest" lazyload />
+
+			<SingleInfo
+			text={[
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, turpis pretium varius suscipit, lectus est interdum turpis, a ullamcorper felis ipsum eu neque. Fusce vitae sapien sed dolor tempor convallis. Nulla id velit nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum dapibus aliquam dapibus. Pellentesque at consectetur nibh, scelerisque iaculis massa. Vestibulum elit dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, turpis pretium varius suscipit, lectus est interdum turpis, a ullamcorper felis ipsum eu neque. Fusce vitae sapien sed dolor tempor convallis. Nulla id velit nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum dapibus aliquam dapibus. Pellentesque at consectetur nibh, scelerisque iaculis massa. Vestibulum elit dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			]} />
+			 -->
+
+
+
+		</section>
+
+		<CallToAction />
+		<Footer />
+
+	</main>
+</Layout>
+
+<style>
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+header{
+	margin-bottom: 10px;
+}
+
+h1{
+	font-weight: 400;
+	font-size: 28px;
+	margin: 2px 0 20px;
+}
+h2{
+	font-weight: 300;
+	font-size: 18px;
+	margin: 3px 0 25px;
+	b{
+		font-weight: 400;
+	}
+
+}
+p{
+	font-size: 16px;
+	line-height: 1.6;
+	color: #565656;
+}
+section{
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+	section {
+		gap: 80px;
+	}
+	header{
+		padding: 40px 0 0;
+	}
+	h1{
+		font-weight: 300;
+		font-size: 66px;
+		margin: 2px 0 50px;
+	}
+	h2{
+		font-weight: 200;
+		font-size: 62px;
+	}
+	p{
+		color: #444;
+		font-size: 22px;
+		line-height: 1.5;
+		font-weight: 300;
+		margin: 40px 0 0 120px;
+	}
+}
+
+</style>
+
+
+
+
