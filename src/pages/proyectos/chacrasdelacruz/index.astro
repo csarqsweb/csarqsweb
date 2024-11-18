@@ -1,0 +1,221 @@
+---
+import CallToAction from '@/components/Common/CallToAction/CallToAction';
+import Footer from '@/components/Common/Footer/Footer';
+import Header from '@/components/Common/Header/Header';
+import SingleHero from '@/components/Single/SingleHero';
+import SingleImage from '@/components/Single/SingleImage';
+import SingleImageHero from '@/components/Single/SingleImageHero';
+import SingleImagePair from '@/components/Single/SingleImagePair';
+import SingleInfo from '@/components/Single/SingleInfo';
+
+import Layout from '@/layouts/Layout';
+
+
+import OgImg from '../../../assets/images/clientes/chacrasdelacruz/og-chacrasdelacruz.webp'
+import imageHero from '../../../assets/images/clientes/chacrasdelacruz/feature-chacrasdelacruz.webp'
+
+import imageLiving from '../../../assets/images/clientes/chacrasdelacruz/living-chacrasdelacruz.webp'
+
+import imagenEspacio2 from '../../../assets/images/clientes/chacrasdelacruz/cocina-chacrasdelacruz-1.webp'
+import imagenEspacio1 from '../../../assets/images/clientes/chacrasdelacruz/cocina-chacrasdelacruz-2.webp'
+
+import imagenPatio from '../../../assets/images/clientes/chacrasdelacruz/patio-chacrasdelacruz.webp'
+
+
+
+
+import imagenBano1 from '../../../assets/images/clientes/chacrasdelacruz/bano-chacrasdelacruz-1.webp'
+import imagenBano2 from '../../../assets/images/clientes/chacrasdelacruz/bano-chacrasdelacruz-2.webp'
+
+---
+
+
+<Layout title="— Casa Chacras de la Cruz" ogImage={OgImg.src} description="Moderna casa de diseño minimalista con amplios espacios y acabados de lujo. Perfecta para quienes buscan un hogar elegante y en armonía con la naturaleza." >
+	<main>
+		<Header class={'header'} />
+		<div style={{height:'100px'}}></div>
+
+		<section>
+			<header>
+				<div class="row">
+
+					<h1>— Casa Chacras de la Cruz</h1>
+
+					<SingleHero
+					items={[
+						// { title: "Cliente", text: "Lorem impsim " },
+						{ title: "Location", text: "Chacras de la Cruz, Capilla del Señor" },
+						{ title: "Size", text: "280m2" },
+						{ title: "Terreno", text: "3507m2" },
+						{ title: "Type", text: "Vivienda" },
+					]}
+					
+					
+
+
+				
+					description={[
+						"Elegancia y minimalismo se fusionan en esta espectacular vivienda. Con un diseño contemporáneo y acabados de alta calidad, cada rincón de esta casa ha sido cuidadosamente pensado para ofrecer el máximo confort y estilo. La paleta de colores neutros y los materiales naturales crean un ambiente sereno y sofisticado, ideal para aquellos que buscan un hogar moderno y atemporal.",
+						"La casa cuenta con espacios amplios y luminosos, que se integran perfectamente con el entorno natural gracias a sus grandes ventanales. La cocina, equipada con electrodomésticos de última generación, es el corazón de la casa y el lugar perfecto para compartir momentos especiales. Además, la terraza exterior es ideal para disfrutar de reuniones al aire libre."
+						
+					]} />
+
+				</div>
+			</header>
+
+			<SingleImageHero image={imageHero} title="Entrada principal" subtitle="Chacras de la Cruz" />
+
+			<SingleInfo
+			title="Cocina"
+			text={[
+				"Esta cocina moderna cuenta con una gran isla central con encimeras de madera, que ofrece espacio para cocinar y comer. También hay una mesa de comedor en el fondo, perfecta para disfrutar de comidas familiares o reuniones con amigos. Los gabinetes de madera a juego y los electrodomésticos de acero inoxidable le dan a la cocina un aspecto elegante y sofisticado. La iluminación natural inunda el espacio a través de las grandes ventanas, creando un ambiente cálido y acogedor. "
+				
+				
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: imagenEspacio1,
+					title: "Cocina ",
+					subtitle: "Chacras de la Cruz"
+				},
+				{
+					image: imagenEspacio2,
+					title: "Isla Cocina",
+					subtitle: "Chacras de la Cruz",
+					parallax: '0.07'
+				}
+			]}/>
+			
+			<SingleInfo
+			text={[
+
+				"Este espacio exterior es una extensión perfecta de la vivienda, diseñado para disfrutar al máximo del aire libre. La integración de la naturaleza a través de las plantas y la elección de materiales naturales como la madera crean un ambiente cálido y acogedor. La chimenea exterior es el punto focal ideal para las noches más frescas. ",
+				
+			]} />
+			
+
+
+
+			<SingleImageHero image={imageLiving} title="Living" subtitle="Chacras de la Cruz" />
+
+			<SingleInfo
+			text={[
+
+				"Esta casa moderna de una sola planta cuenta con una fachada blanca limpia y elegante, acentuada por una pared de piedra natural que rodea la puerta de entrada de madera. La casa está rodeada por un césped verde bien cuidado y árboles altos que proporcionan sombra y privacidad. El diseño general de la casa es moderno y minimalista, con líneas limpias y formas geométricas. ",
+				
+			]} />
+
+			<SingleImage image={imagenPatio}  title="El patio trasero" subtitle="Chacras de la Cruz" />
+
+
+			<SingleInfo
+			text={[
+
+				"El patio trasero está diseñado para ofrecer el máximo confort y estilo de vida al aire libre. El césped verde y bien cuidado se extiende hasta la piscina, creando un espacio amplio y versátil. La piscina cuenta con un diseño moderno y está rodeada por un solárium con tumbonas para tomar el sol. Una pérgola con cubierta de madera proporciona sombra y un espacio de comedor al aire libre. Los muros de piedra natural añaden un toque rústico y elegante al diseño, mientras que la vegetación exuberante crea un ambiente privado y acogedor. ",
+				
+			]} />
+
+			<SingleInfo
+			title="El baño"
+			text={[
+				"El baño está diseñado con una combinación de materiales que crean un ambiente sereno y sofisticado. Las paredes están revestidas con azulejos rectangulares blancos de cerámica, que proporcionan una superficie fácil de limpiar y un aspecto moderno. El mueble bajo el lavabo está fabricado en madera natural, aportando calidez y textura al espacio. La bañera ovalada, de líneas suaves y diseño contemporáneo, es el centro de atención del baño. El suelo, de un tono similar al de las paredes, crea una sensación de continuidad visual. "
+				
+				
+			]} />
+
+			<SingleImagePair images={[
+				{
+					image: imagenBano1,
+					title: "Baño ",
+					subtitle: "Chacras de la Cruz"
+				},
+				{
+					image: imagenBano2,
+					title: "El baño",
+					subtitle: "Chacras de la Cruz",
+					parallax: '0.07'
+				}
+			]}/>
+
+			<SingleInfo
+			
+			text={[
+				"El baño presenta un estilo contemporáneo y minimalista, caracterizado por la sencillez de las formas, la elección de materiales de alta calidad y la combinación de colores neutros con toques de color en los detalles. "
+				
+			]} />
+
+
+		</section>
+
+		<CallToAction />
+		<Footer />
+
+	</main>
+</Layout>
+
+<style>
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+header{
+	margin-bottom: 10px;
+}
+
+h1{
+	font-weight: 400;
+	font-size: 28px;
+	margin: 2px 0 20px;
+}
+h2{
+	font-weight: 300;
+	font-size: 18px;
+	margin: 3px 0 25px;
+	b{
+		font-weight: 400;
+	}
+
+}
+p{
+	font-size: 16px;
+	line-height: 1.6;
+	color: #565656;
+}
+section{
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+	section {
+		gap: 80px;
+	}
+	header{
+		padding: 40px 0 0;
+	}
+	h1{
+		font-weight: 300;
+		font-size: 66px;
+		margin: 2px 0 50px;
+	}
+	h2{
+		font-weight: 200;
+		font-size: 62px;
+	}
+	p{
+		color: #444;
+		font-size: 22px;
+		line-height: 1.5;
+		font-weight: 300;
+		margin: 40px 0 0 120px;
+	}
+}
+
+</style>
+
+
+
+
